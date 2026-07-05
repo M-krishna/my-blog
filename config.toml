@@ -1,6 +1,6 @@
 # This config follows Serene theme config
 
-base_url = "https://example.com"
+base_url = "https://m-krishna.github.io/my-blog"
 title = "Welcome"
 description = "Fazeneo's blog"
 default_language = "en"
