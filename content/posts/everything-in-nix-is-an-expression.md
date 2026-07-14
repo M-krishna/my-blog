@@ -14,7 +14,7 @@ In this post, I won't be going into how Nix is used to build packages. Instead, 
 By the end of this post, you'll have a basic understanding of expressions and expression evaluation in Nix.
 
 # What are Expressions?
-To put it simply, **an expression is a piece of code that can be evaluted to produce a value.**
+To put it simply, **an expression is a piece of code that can be evaluated to produce a value.**
 
 If you come from an imperative programming language such as C, Python, or JavaScript, you may have heard about **statements vs expressions**.
 
@@ -82,7 +82,7 @@ The `let` part introduces local variables that can be used in the expression aft
 
 `x + y`
 
-Since `x` is `10` and `y` is `20`, this evaluates to `30`. Thereforre, the entire `let ... in` expression evaluates to `30`.
+Since `x` is `10` and `y` is `20`, this evaluates to `30`. Therefore, the entire `let ... in` expression evaluates to `30`.
 
 We can visualize it like this:
 ```nix
@@ -185,7 +185,7 @@ Here, `10 + 20` is an expression that evaluates to `30`. The `let ... in` expres
 This is how larger Nix programs are built: smaller expressions are combined to form larger expressions.
 
 # My Mental Model
-When reading Nix code, I find useful to ask:
+When reading Nix code, I find it useful to ask:
 > **What value does this expression evaluate to?**
 
 A number evaluates to a number. An arithmetic expression evaluates to the result of the computation. A `let ... in` evaluates to the value of the expression after `in`. A function expression evaluates to a function. Even the contents of `.nix` file evaluate to a value.
