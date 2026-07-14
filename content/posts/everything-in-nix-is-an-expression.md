@@ -45,7 +45,7 @@ age >= 18   # evaluates to either True or False
 This distinction becomes important when learning Nix because, unlike many imperative languages, Nix is an expression-oriented language.
 
 # Expressions in Nix
-As the title of this blog post suggests, everything is an expression in Nix. Let's took a look at few examples.
+As the title of this blog post suggests, everything is an expression in Nix. Let's take a look at few examples.
 ```nix
 "Hello"             # evaluates to a string
 42                  # evaluates to an integer
