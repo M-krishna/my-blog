@@ -1,5 +1,5 @@
 +++
-title = "Nix Part 2: Understanding Functions and Function Applications"
+title = "Nix Part 2: Understanding Functions and Function Application"
 date = 2026-07-15
 template = "post.html"
 +++
@@ -11,7 +11,7 @@ x: x * 2
 ```
 But what exactly does this syntax mean? How do we give a function a name? How do functions with multiple arguments work? And how do we apply a function to an argument?
 
-In this post, we'll try to understand how function work in Nix.
+In this post, we'll try to understand how functions work in Nix.
 
 # Defining a function
 Let's start with a simple function:
@@ -34,7 +34,7 @@ Unlike languages such as Python or JavaScript, Nix doesn't use parentheses to ap
 ```
 double(5)
 ```
-Instead, function application is written using whitespaces:
+Instead, function application is written using whitespace:
 ```nix
 double 5
 ```
@@ -145,7 +145,7 @@ The syntax is different, but the structure is similar:
 |-----------------|-----|
 | `(λx. x * 2) 5` | `(x: x * 2) 5` |
 
-In both the cases, `5` is applied to the function. This connection becomes even more apparent when we look at functions with multiple arguments.
+In both cases, `5` is applied to the function. This connection becomes even more apparent when we look at functions with multiple arguments.
 
 Our Nix function:
 ```nix
@@ -235,7 +235,7 @@ This is also not technically a function with no arguments. It is a function that
 ```
 which evaluates to `42`.
 
-# Functions that accepts Attribute Sets
+# Functions That Accept Attribute Sets
 So far, our functions have accepted simple values:
 ```nix
 x: x * 2
@@ -320,7 +320,7 @@ Now we can pass:
 The function extracts `name` and allows the additional attributes to be present.
 
 # Functions are Values
-The main idea I want to remember from this post is that functions are values in Nix. The epxression:
+The main idea I want to remember from this post is that functions are values in Nix. The expression:
 ```nix
 x: x * 2
 ```
