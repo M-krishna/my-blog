@@ -5,7 +5,7 @@ template = "post.html"
 draft = true
 +++
 
-In the previous posts, we looked at expressions, functions and attribute sets. In this post, we're going to look at another important data structure in Nix: **lists**.
+In the [previous posts](https://fazeneo.in/posts/attribute-sets-in-nix/), we looked at expressions, functions and attribute sets. In this post, we're going to look at another important data structure in Nix: **lists**.
 
 If you've used languages like Python or JavaScript, lists should feel familiar. A list is simply an ordered collection of values.
 
