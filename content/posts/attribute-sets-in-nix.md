@@ -2,7 +2,6 @@
 title = "Nix Part 3: Understanding Attribute Sets"
 date = 2026-07-17
 template = "post.html"
-draft = true
 +++
 
 In the [previous post](https://fazeneo.in/posts/functions-in-nix/), we learned about functions in Nix. While learning about functions that accept named arguments, we encountered syntax like this:
