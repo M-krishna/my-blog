@@ -87,7 +87,7 @@ There isn't a well-defined way to combine two complete paths together, so Nix do
 # Why does Nix have a Path Type?
 At first, I wondered why Nix doesn't simply use strings for everything. The answer is that a path represents something different. A string is simply text. A path represents the location of a file or directory.
 
-By distinguishing between the two, Nix knowns when we're referring to files rather than ordinary text. This becomes especially important later when we start importing files and building packages.
+By distinguishing between the two, Nix knows when we're referring to files rather than ordinary text. This becomes especially important later when we start importing files and building packages.
 
 # My Mental Model
 The biggest takeaway from this post is that **a path is its own data type.** Although paths and strings may sometimes look similar, they serve different purposes.
