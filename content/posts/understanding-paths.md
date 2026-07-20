@@ -2,10 +2,9 @@
 title = "Nix Part 5: Understanding Paths"
 date = 2026-07-20
 template = "post.html"
-draft = true
 +++
 
-In the [previous post], we looked at functions, attribute sets and lists. In this post, we're going to learn about another built-in data type in Nix: **paths**.
+In the [previous post](https://fazeneo.in/posts/working-with-lists/), we looked at functions, attribute sets and lists. In this post, we're going to learn about another built-in data type in Nix: **paths**.
 
 At first glance, paths may seem like ordinary strings. After all, both of them can look very similar. For example: `./main.nix` and `"./main.nix"` look almost identical. However they are **not** the same thing.
 
