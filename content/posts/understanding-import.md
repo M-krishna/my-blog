@@ -2,7 +2,6 @@
 title = "Nix Part 6: Understanding import"
 date = 2026-07-21
 template = "post.html"
-draft = true
 +++
 
 In the [previous post](https://fazeneo.in/posts/understanding-paths/), we learned that paths are their own data type in Nix. While that may have seemed like a small detail at first, paths become much more useful when we start importing code from other files.

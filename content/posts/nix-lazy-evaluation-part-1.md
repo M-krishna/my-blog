@@ -144,4 +144,4 @@ Instead of imagining variables as boxes that already contain values, I imagine t
 
 Thinking of expressions as **recipes** rather than already-computed values completely changed how I understood evaluation in Nix. It also explains why Nix often appears to "ignore" parts of a program -- they simply aren't needed.
 
-In the next post, we'll put this mental model to test using `throw`. We'll see that an expression can contain an error and yet never fail, simply because Nix never evaluates it.
+In the next post, we'll put this mental model to test using `throw` and `builtins.trace`. We'll see that an expression can contain an error and yet never fail, simply because Nix never evaluates it.
