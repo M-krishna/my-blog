@@ -2,10 +2,12 @@
 title = "Nix Part 7: Lazy Evaluation (Part 1)"
 date = 2026-07-22
 template = "post.html"
-draft = true
+
+[taxonomies]
+tags = ["nix", "lazy-evaluation", "functional-programming"]
 +++
 
-In the [previous post], we learned that `import` evaluates another Nix expression and returns its value. Throughout the series, we've focused on questions like:
+In the [previous post](https://fazeneo.in/posts/understanding-import/), we learned that `import` evaluates another Nix expression and returns its value. Throughout the series, we've focused on questions like:
 * What does this expression evaluate to?
 * What value does this function return?
 * What does `import` give us?
