@@ -2,6 +2,9 @@
 title = "Lazy evaluation"
 date = 2024-03-15
 template = "post.html"
+
+[taxonomies]
+tags = ["lazy-evaluation"]
 +++
 
 Trying to figure out what ***lazy evaluation*** is after knowing Haskell is fully lazy. Let’s write a normal sum function which takes in two arguments and add them and return the value. There would be two variants of the function:
