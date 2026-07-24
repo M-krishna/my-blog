@@ -2,7 +2,6 @@
 title = "Nix Part 7: Lazy Evaluation (Part 3)"
 date = 2026-07-24
 template = "post.html"
-draft = true
 
 [taxonomies]
 tags = ["nix", "lazy-evaluation", "functional-programming"]
