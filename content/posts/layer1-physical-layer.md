@@ -1,6 +1,6 @@
 +++
 title = "Internet From First Principles: Layer 1, The Physical Layer"
-date = 2026-08-10
+date = 2026-08-11
 description = "What problem does the physical layer actually solve? Turning bits into something that can travel, and back again."
 
 [taxonomies]
@@ -23,7 +23,7 @@ That's the entire job of the physical layer. Nothing more. It doesn't know what 
 # An analogy
 Imagine you're standing in a pitch-dark cave with a friend on the other side, and all you have is a flashlight. You agree on a rule: flashlight ON means "1", flashlight OFF means "0". You start flashing a sequence, and your friend writes down the 1s and 0s as they see them.
 
-Congratulations, you've just implemented a physical layer. You picked a medium (light), a signaling method (on/off), and a speed (how fast you flash). You haven't said anything meaningful yet, no words, no addresses, no message content. You've just proven that you can reliably move a sequence of two distinguishable states from one point to another. Everything else in networking gets built on top of that one gurantee.
+Congratulations, you've just implemented a physical layer. You picked a medium (light), a signaling method (on/off), and a speed (how fast you flash). You haven't said anything meaningful yet, no words, no addresses, no message content. You've just proven that you can reliably move a sequence of two distinguishable states from one point to another. Everything else in networking gets built on top of that one guarantee.
 
 # The technical bit
 Physical layer implementations vary by medium, but they're all solving the same problem:
@@ -33,7 +33,7 @@ Physical layer implementations vary by medium, but they're all solving the same 
 
 None of these mediums are "the real one", they're just different ways of encoding the same abstraction. The physical layer is the only layer that has to deal with actual physics. Every layer above it works with clean, already-decoded bits and never has to think about any of that again.
 
-One detail that tripped me up at first: this translation is bidirectional. It's not just "signal comes in, gets turned into bits." Your machine is also constantly converting outgoing bits into a physical signal to send. Every layer above physical hands it bits to transmit and receives bits back from it, the physical layer is doing the convertion work in both directions, simultaneously, without ever looking at what those bits mean.
+One detail that tripped me up at first: this translation is bidirectional. It's not just "signal comes in, gets turned into bits." Your machine is also constantly converting outgoing bits into a physical signal to send. Every layer above physical hands it bits to transmit and receives bits back from it, the physical layer is doing the conversion work in both directions, simultaneously, without ever looking at what those bits mean.
 
 There's also a layer of engineering here that's easy to skip past: encoding schemes like Manchester encoding, which insert signal transitions in the middle of each bit so that the receiving end can stay synchronized with the sender's clock, even without a shared clock signal. Cable standards (Cat5e, Cat6, Cat7) and connectors (RJ45, SFP+) exist because "just send a voltage down a wire" runs into very real limits on distance, speed, and interference, and someone has to standardize the physical shape of the solution.
 
@@ -60,7 +60,7 @@ sudo tcpdump -i en0 -c 10 -e
 Running the last command is the moment this stopped being theoretical for me. Watching real frames scroll past, knowing that a moment ago they were literally voltage on a wire, is a small thing, but it made the abstraction feel real instead of assumed.
 
 # Handoff to Layer 2
-Once the physical layer has done it's one job (turning signal into bits, and bits into signal), it has no idea what to do with those bits next. It just hands them upward. The next layer, Data Link, is where those raw bits start getting organized into something meaningful: frames, addressed to specific devices on the local network.
+Once the physical layer has done its one job (turning signal into bits, and bits into signal), it has no idea what to do with those bits next. It just hands them upward. The next layer, Data Link, is where those raw bits start getting organized into something meaningful: frames, addressed to specific devices on the local network.
 
 That's where I'm headed next.
 
