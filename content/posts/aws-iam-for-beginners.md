@@ -157,7 +157,7 @@ I found this genuinely surprising the first time. The code did not change. Nothi
 ## 5. Allow one room, not every room
 `AmazonS3ReadOnlyAccess` allows every bucket in the account, which is never what you actually want. So let us scope it down.
 
-Create two buckets, `pratice-a-something` and `practice-b-something`. Names have to be gloabally unique, so add something random.
+Create two buckets, `pratice-a-something` and `practice-b-something`. Names have to be globally unique, so add something random.
 
 Change the function so the bucket comes in through the event, which lets you switch targets without redeploying:
 ```typescript
