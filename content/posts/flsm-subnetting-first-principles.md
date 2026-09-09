@@ -22,9 +22,9 @@ An IPv4 address is 32 bits long. When you are handed a root network like `192.16
 The remaining 8 bits are your "host portion". To create smaller subnets, you have to steal bits from the host portion and reassign them to the network. 
 
 Because we are working in binary, every bit you borrow doubles the number of subnets you can create:
-* Borrow 1 bit: 2 subnets
-* Borrow 2 bits: 4 subnets
-* Borrow 3 bits: 8 subnets
+* Borrow 1 bit: 2 subnets (`2^1 = 2`)
+* Borrow 2 bits: 4 subnets (`2^2 = 4`)
+* Borrow 3 bits: 8 subnets (`2^3 = 8`)
 
 Every bit you borrow increases your total number of networks, but directly steals from the number of devices you can put inside them.
 
