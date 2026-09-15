@@ -1,6 +1,6 @@
 +++
 title = "Building a Network from scratch with iproute2"
-date = 2026-09-12
+date = 2026-09-15
 description = "Building a tiny network from scratch using Linux network namespaces, veth pairs, IP addresses, routing, ARP, and ping."
 
 [taxonomies]
